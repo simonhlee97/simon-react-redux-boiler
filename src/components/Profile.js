@@ -1,4 +1,5 @@
 import React from 'react'
+import requireAuth from './requireAuth'
 
 const Profile = () => {
 	return (
@@ -9,4 +10,4 @@ const Profile = () => {
 	)
 }
 
-export default Profile
+export default requireAuth(Profile)
