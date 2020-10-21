@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 // conditionally show navLinks
 import { connect } from 'react-redux'
-
+import '../components/header.css'
 class Header extends Component {
 	renderNavlinks() {
 		if (this.props.authenticated) {
@@ -23,7 +23,7 @@ class Header extends Component {
 	}
 	render() {
 		return (
-			<div>
+			<div className="header">
 				<Link to="/">Simon Boiler-React</Link>
 				{this.renderNavlinks()}
 			</div>
