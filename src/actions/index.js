@@ -12,6 +12,14 @@ export const signup = (formProps, callback) => async (dispatch) => {
 	}
 }
 
+export const signout = () => {
+	localStorage.clearItem('token')
+	return {
+		type: AUTH_USER,
+		payload: '',
+	}
+}
+
 // Redux Thunk allows us to push Actions through a "Dispatch Funnel" to Thunk Middleware to Reducers
 // Thunk is an alternative approach to async action creators (unlimited number of actions)...different than the single Redux Promise.
 // export const signup = ({ email, password }) => {
