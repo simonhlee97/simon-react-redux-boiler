@@ -10,4 +10,5 @@ const Profile = () => {
 	)
 }
 
+// user requireAuth HOC
 export default requireAuth(Profile)
