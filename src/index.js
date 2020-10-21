@@ -11,7 +11,6 @@ import Welcome from './components/Welcome'
 import Signup from './components/auth/Signup'
 import Signout from './components/auth/Signout'
 import Signin from './components/auth/Signin'
-
 import Profile from './components/Profile'
 
 const store = createStore(
